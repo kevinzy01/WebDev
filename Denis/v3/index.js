@@ -1,6 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const multer = require('multer');
+const ObjectID = require('mongodb'.ObjectID);
+const mongodb = require('mongodb');
+const MongoClient = require('mongodb').MongoClient;
+
+const { Readable } = require('stream');
 var app = express();
 
 mongoose.connect("mongodb://localhost/djdenis")
@@ -18,9 +24,10 @@ app.get("/", function (req, res) {
 
 // Schema setup
 var songSchema = new mongoose.Schema({
-  titulo: String,
-  img: String,
-  author: String,
+  titulo: {type: String, required: true},
+  imagen: String,
+  autor: {type: String, required: true},
+  file: {type: String, required: true},
   comments: [{body: String, date: Date}],
   date: {type: Date, default: Date.now},
   meta: {

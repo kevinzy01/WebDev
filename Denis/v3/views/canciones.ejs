@@ -1,5 +1,15 @@
 <% include partials/header %>
 
+<% songs.forEach(function(song) { %>
 
+<div class="song">
+  <h2><%=song.titulo%></h2>
+  <img src="<%=song.img%>" alt="">
+  <audio src="<%=song.file%>" controls>
+
+  </audio>
+</div>
+
+<% })%>
 
 <% include partials/footer %>
