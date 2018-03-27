@@ -1,0 +1,18 @@
+<% include partials/header%>
+
+<form class="form" action="/canciones" method="post">
+  <div class="form-item">
+    <input type="text" class="form-input" name="song[titulo]" placeholder="Titulo" value="">
+  </div>
+  <div class="form-item">
+    <input type="text" class="form-input" name="song[imagen]" placeholder="Imagen " value="">
+  </div>
+  <div class="form-item">
+    <input type="text" class="form-input" name="song[autor]" placeholder="Autores" value="">
+  </div>
+  <div class="form-item">
+    <button type="submit" class="upload" name="button">Subir</button>
+  </div>
+</form>
+
+<% include partials/footer%>

@@ -1,0 +1,31 @@
+.form {
+  margin-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.form-input{
+  width: 100%;
+  margin: 15px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.form-input:focus{
+  box-shadow: 1px 1px 1px 1px red;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.upload {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 30px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
