@@ -1,12 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const multer = require('multer');
-const ObjectID = require('mongodb'.ObjectID);
-const mongodb = require('mongodb');
-const MongoClient = require('mongodb').MongoClient;
 
-const { Readable } = require('stream');
 var app = express();
 
 mongoose.connect("mongodb://localhost/djdenis")
